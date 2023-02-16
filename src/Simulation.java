@@ -3,7 +3,6 @@ import java.util.Calendar;
 
 public class Simulation {
 
-    /*GUT: deklarierter Typ ist House, durch dynamisches Binden kann aber auch HouseWithBattery verwendet werden*/
     public Simulation(House house, Weather weather, Irradiance irradiance){
         boolean debug = false;
         if (!debug){
@@ -11,7 +10,6 @@ public class Simulation {
             System.out.println("House: " + house);
         }
         PVSystem PVSystem = house.getPVSystems()[0];
-        //output
         double kWp = 0;                 // kilowatt peak over the year
         double kWhProduced = 0;         // total of kilowatt hours produced over the
         double kWhFedIntoGrid  = 0;     // total of kilowatt hours fed into public power grid over the year

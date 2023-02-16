@@ -1,9 +1,4 @@
 import java.util.Random;
-/*
- * Nischler:
- * Weillechner: Zusicherungen, Objektkopplung Kommentare, Klassenzusammehalt Kommentare in bei HOUSE , HOUSE_WITH_BATTERY und PVsystem eingefügt, ERROR Kommentare.
- * SCHLECHT: wir haben keine expliziten UNIT Tests geschrieben.
- *  */
 
  /* ERROR: aktuell wird bei Methoden der Klasse: RechargeableBattery die Spannung übergeben, wird aber eigentlich nicht gebraucht.
   * daher wird derzeit bei den Methodenaufrufen die Spannung als fixer Wert übergeben.
